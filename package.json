@@ -1,4 +1,5 @@
 {
+  "homepage": "https://jaelgo99.github.io/assignment4",
   "name": "assignment4",
   "private": true,
   "version": "0.0.0",
@@ -6,7 +7,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d build"
   },
   "dependencies": {
     "@react-three/drei": "^9.83.9",
@@ -19,6 +22,8 @@
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
     "@vitejs/plugin-react": "^3.1.0",
+    "gh": "^2.8.9",
+    "pages": "^0.0.16",
     "vite": "^4.1.0"
   }
 }
